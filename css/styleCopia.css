@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+	box-sizing:border-box
+} 
+
+
+
+ body{
+    max-width: 614px;   
+    margin: 0 auto;  
+    
+} 
+
+
+
+
+.topo{
+    background-color: #CF2B2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    
+    height: 92px;
+    top: 0px; 
+
+    padding-left: 21px;
+    padding-right: 145px;
+
+    /* posicao fixa*/
+    position: fixed;
+    width: 100%;
+    max-width: 614px;
+
+        
+        
+}
+
+    
+
+.restaurante{
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+
+    width: 248px;
+    height: 44px;
+    left: 21px;
+    top: 8px; 
+
+    padding-top:8px ;
+     
+}
+.slogan{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+
+    width: 226px;
+    height: 17px;
+    left: 21px;
+    top: 57px;
+    padding-top: 18px; 
+
+}
+
+.cardapio{
+    background-color: #E5E5E5;
+    margin-top: 90px;
+    margin-bottom: 92px;    
+
+    
+}
+
+.opcoes-categoria{   
+    padding-top: 21px;   
+    padding-left: 16px;  
+    padding-right: 16px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;  
+
+    
+     
+}  
+
+.titulo-categoria{
+    font-family: 'Righteous', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+
+    color: #333333;
+
+    
+    width: 320px; 
+    height: 25px;
+    left: 19px; 
+    top: 123px;
+    padding-bottom: 40px;
+
+    
+    
+}
+
+.opcao-categoria{
+    display: flex;
+    gap: 16px;
+    overflow-x: scroll;
+}
+
+/* A borda p ser marcada */
+ .itens{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+
+    width: 172px;
+    height: 216px;
+    left: 19px;
+    top: 165px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+
+   
+     padding-left: 14px; 
+   
+
+    margin-bottom: 27px; 
+}  
+
+.titulo-item{
+    width: 139px;
+    height: 23px;
+    left: 34px;
+    top: 278px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #333333;
+    padding-top:8px ;
+    padding-bottom:27px ; 
+}
+
+.itens div:nth-child(3) {
+    width: 147px;
+    height: 39px;
+    left: 33px;
+    top: 305px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #A6A6A6;
+
+    padding-bottom:44px ; 
+
+}
+.preco{
+    width: 66px;
+    height: 19px;
+    left: 33px;
+    top: 349px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+}
+
+.rodape{
+    background-color: #FFFFFF;   
+  
+    height: 92px;
+   
+    bottom: 0px; 
+
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+    position: fixed;
+    width: 100%;
+    max-width: 614px;
+
+
+}
+
+.botao-pedido{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+
+    background-color: green;
+    max-width: 364px;
+    border: none; /*Resetar a borda*/
+    height: 62px; /*Altura botão*/    
+    line-height: 31px; /* centraliza verticalmente o "texto" do botão, metade da altura do elemento*/
+    padding: 0 68px;  /* margem interna do botão verticalmente o texto do botão. 0 no eixo y (distância do topo e base) e 68 pixels nas laterais direita e esquerda*/
+    cursor: pointer; /* garante que o botão sempre terá o ponteiro como cursor*/
+    border-radius:31px ; /* indica a distância da borda em relação ao centro. Raio é uma medida utilizada em círculo*/    
+}
+
+.botao-pedido:hover {
+    transform: scale(1.05); /*qdo o mouse estiver sobre o botão, o botão será aumentado*/
+}
+
+.botao-pedido:disabled{
+    background-color: #CBCBCB;
+}
+
+.marcado{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .comida1{
+    border: 4px solid #32B72F ;  
+} */
+.check{
+    padding-right: 4px;
+    display: none;
+}
+
+.item-selecionado{
+    border: 4px solid #32B72F ;
+}
+
+.link-whats{
+    display: none;
+}
+/* @media(min-width: 580px){
+    .cardapio{
+     
+    }
+} */

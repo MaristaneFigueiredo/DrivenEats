@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Driveneats</title>
+    </head>
+    <body>
+        <!--Engloba topo, cardapio e rodapé-->
+
+        <!-- Início topo -->
+        <div class="topo">
+            <div class="restaurante">Driveneats</div>
+            <div class="slogan">Sua comida em 6 minutos</div>
+
+        </div> <!-- Fim topo -->
+
+        <!-- Início cardapio -->
+        <div class="cardapio">
+              
+              <div class="opcoes-categoria">
+               
+                <div class="titulo-categoria">Primeiro, seu prato</div>  
+                <div class="opcao-categoria pratos"> <!-- Alimentos -->      <!-- class="itens comida1"-->                  
+                    <div onclick="marcarComida(this)" class="itens"> 
+                        <div class="imagem"><img src="./imagens/frango_yin_yang 1.png" ></div>
+                        <div class="titulo-item">Frango Yin Yang</div>
+                        <div>Um pouco de batata, um pouco de salada</div>
+                        <div class="marcado">
+                            <div class="preco">R$ 14,90</div>
+                            <div class="check"><img src="./imagens/Vector.png" ></div>
+                        </div>
+                                            
+                    </div>
+                    <div onclick="marcarComida(this)" class="itens">
+                        <div class="imagem"><img src="./imagens/frango_yin_yang 1.png" ></div>
+                        <div class="titulo-item">Frango Xadrez</div>
+                        <div>Um pouco de batata, um pouco de salada</div>
+                        
+                        <div class="marcado">
+                            <div class="preco">R$ 10,50</div>
+                            <div class="check"><img src="./imagens/Vector.png" ></div>
+                        </div>                   
+                    </div>
+
+                    <div onclick="marcarComida(this)" class="itens">
+                        <div class="imagem"><img src="./imagens/frango_yin_yang 1.png" ></div>
+                        <div class="titulo-item">Frango Ensopado</div>
+                        <div>Um pouco de batata, um pouco de salada</div>
+                        
+                        <div class="marcado">
+                            <div class="preco">R$ 8,90</div>
+                            <div class="check"><img src="./imagens/Vector.png" ></div>
+                        </div>                  
+                    </div>
+
+         
+                </div>
+
+                <div class="titulo-categoria">Agora, sua bebida</div>  
+                <div class="opcao-categoria bebidas"> <!-- bebidas -->                   
+                    <div onclick="marcarBebida(this)" class="itens">
+                        <div class="imagem"><img src="./imagens/coquinha_gelada 1.png" ></div>
+                        <div class="titulo-item">Coquinha gelada</div>
+                        <div>Lata 350ml</div>
+                        <div class="marcado">
+                            <div class="preco">R$ 4,90</div>
+                            <div class="check"><img src="./imagens/Vector.png" ></div>
+                        </div>
+                                          
+                    </div>
+                    <div onclick="marcarBebida(this)" class="itens">
+                        <div class="imagem"><img src="./imagens/coquinha_gelada 1.png" ></div>
+                        <div class="titulo-item">Pespi gelada</div>
+                        <div>Lata 350ml</div>
+                        
+                        <div class="marcado">
+                            <div class="preco">R$ 2,70</div>
+                            <div class="check"><img src="./imagens/Vector.png" ></div>
+                        </div>                  
+                    </div>
+
+                    <div onclick="marcarBebida(this)" class="itens">
+                        <div class="imagem"><img src="./imagens/coquinha_gelada 1.png" ></div>
+                        <div class="titulo-item">Guaraná gelado</div>
+                        <div>Lata 350ml</div>
+                        
+                        <div class="marcado">
+                            <div class="preco">R$ 8,55</div>
+                            <div class="check"><img src="./imagens/Vector.png" ></div>
+                        </div>                  
+                    </div>
+                </div>
+
+                <div class="titulo-categoria">Por fim, sua sobremesa</div>  
+                <div class="opcao-categoria sobremesas"> <!-- sobremesa -->                   
+                    <div onclick="marcarSobremesa(this)" class="itens">
+                        <div class="imagem"><img src="./imagens/pudim 1.png" ></div>
+                        <div class="titulo-item">Pudim</div>
+                        <div>Apenas pudim</div>
+                        <div class="marcado">
+                            <div class="preco">R$ 7,90</div>
+                            <div class="check"><img src="./imagens/Vector.png" ></div>
+                        </div>
+                                         
+                    </div>
+                    <div onclick="marcarSobremesa(this)" class="itens">
+                        <div class="imagem"><img src="./imagens/pudim 1.png" ></div>
+                        <div class="titulo-item">Bolo de Pudim</div>
+                        <div>Apenas pudim</div>
+                        
+                        <div class="marcado">
+                            <div class="preco">R$ 11,90</div>
+                            <div class="check"><img src="./imagens/Vector.png" ></div>
+                        </div>                    
+                    </div>
+
+                    <div onclick="marcarSobremesa(this)" class="itens">
+                        <div class="imagem"><img src="./imagens/pudim 1.png" ></div>
+                        <div class="titulo-item">Pudim Fake</div>
+                        <div>Apenas pudim</div>
+                        
+                        <div class="marcado">
+                            <div class="preco">R$ 17,50</div>
+                            <div class="check"><img src="./imagens/Vector.png" ></div>
+                        </div>                    
+                    </div>
+                </div>
+
+
+
+              </div>
+              
+        </div> <!-- Fim cardapio -->
+
+        <!-- Início rodape -->
+        <div class="rodape">
+            <button onclick="enviarPedido()"class="botao-pedido" >Selecione os 3 itens para fechar o pedido</button>                                  
+            
+            <button onclick="window.location.href='https://google.com.br'" class="link-whats"></button> 
+        </div><!-- Fim rodape -->
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
